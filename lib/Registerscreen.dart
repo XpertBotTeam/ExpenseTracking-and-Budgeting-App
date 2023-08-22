@@ -7,6 +7,7 @@ class Registerscreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Register"),
       ),
+
       body: Center(
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
