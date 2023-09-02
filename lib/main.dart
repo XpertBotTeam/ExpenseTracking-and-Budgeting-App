@@ -1,24 +1,17 @@
+import 'package:expensetrackingandbudgetingapp/routes/routes.dart';
 import 'package:flutter/material.dart';
-import 'loginScreen.dart';
+
+import 'package:get/get.dart';
+
 
 void main() {
-  runApp(MyApp());
+  runApp(GetMaterialApp(
+    title: "register",
+    initialRoute:AppRoutes.register,
+    getPages: AppRoutes.routes,
+    debugShowCheckedModeBanner: false,
+  ));
 }
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Expense tracking budget app",
-      home: LoginScreen(), // Use the correct class name and capitalization
-    );
-  }
-}
-
-
-
-
-
 
 
 
